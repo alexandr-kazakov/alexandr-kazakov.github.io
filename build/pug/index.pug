@@ -1,0 +1,65 @@
+extends layout.pug
+
+include mixins.pug
+
+block title
+  | Alexandr Kazakov
+block meta
+  meta(name="keywords" content="Alexandr Kazakov")
+  meta(name="description" content="Alexandr Kazakov. Software engineer. AMP & crypto geek. Wannabe writer")
+block content
+  section(class="welcome-section section")
+    div.container
+      div(class="row align-items-center")
+        div(class="col-xl-12 col-lg-12 col-md-12 col_m-b-md")
+          div.welcome-block
+            //- div.welcome-block__left
+            //-   img(src="https://secure.gravatar.com/avatar/b6ca1b6b48e87fdd83626bd47b3054e6?s=140&amp;d=identicon&amp;r=g" alt=author  class="welcome-block__author-photo")
+
+            div.welcome-block__right
+              h1.welcome-block__title Hi, I'm Alexandr Kazakov
+              //- h2.welcome-block__sub-title first line
+              span.welcome-block__descr The Software engineer, AMP & crypto geek, Wannabe writer
+
+  section(class="blog-section section")
+    div.container
+      +section-header("My blog")(class="section-header_m-b")
+        p(class="section-header__descr") Recent posts
+
+      article(class="post-box post-box_m-b")
+        h2.post-box__title
+          a(href="amp-emails-intro.html") [RU] Ваша емайл-рассылка нуждается в AMP-emails прямо сейчас
+        p.post-box__descr
+          | Я AMP-email разработчик с более чем четыре года опыта, расскажу как...
+        +entry-meta("Alexandr Kazakov", "https://secure.gravatar.com/avatar/b6ca1b6b48e87fdd83626bd47b3054e6?s=40&amp;d=identicon&amp;r=g", "2023-09-11")(class="entry-meta_small")
+        ul.categories-tags
+          li
+            +cat-programming
+
+      article(class="post-box post-box_m-b")
+        h2.post-box__title
+          a(href="solana-hackathon-2023.html") My participation in the Solana Hackathon in 2023
+        p.post-box__descr
+          | For the second year in a row I participated in the Solana hackathon, this time the project was...
+        +entry-meta("Alexandr Kazakov", "https://secure.gravatar.com/avatar/b6ca1b6b48e87fdd83626bd47b3054e6?s=40&amp;d=identicon&amp;r=g", "2023-03-01")(class="entry-meta_small")
+        ul.categories-tags
+          li
+            +cat-programming
+
+      article(class="post-box post-box_m-b")
+        h2.post-box__title
+          a(href="solana-hackathon-how-to.html") How to participate in Solana Hackathon
+        p.post-box__descr
+          | Solana holds hackathons every year, I will explain from my own experience how you can participate...
+        +entry-meta("Alexandr Kazakov", "https://secure.gravatar.com/avatar/b6ca1b6b48e87fdd83626bd47b3054e6?s=40&amp;d=identicon&amp;r=g", "2022-03-14")(class="entry-meta_small")
+        ul.categories-tags
+          li
+            +cat-programming
+
+  //- section(class="quote-section quote-section_bg-color-light-blue section")
+  //-   div.container
+  //-     blockquote(class="blockquote blockquote_light blockquote_large icon-quote-left-alt")
+  //-       p Some quats
+
+
+

@@ -1,0 +1,84 @@
+extends layout.pug
+
+include mixins.pug
+
+block title
+  | My participation in the Solana Hackathon in 2023
+block meta
+  meta(name="keywords" content="Solana Hackathon 2023")
+  meta(name="description" content="My experience at Solana Hackathon 2023.")
+block content
+  div.page-wrapper
+    div.container
+      div.row
+        div(class="col-xl-9 col-lg-9 col-md-12 col_m-b-md")
+          article
+            +page-header("My participation in the Solana Hackathon in 2023")(class="page-header_m-b")
+            +entry-meta("Аlexandr Kazakov", "https://secure.gravatar.com/avatar/b6ca1b6b48e87fdd83626bd47b3054e6?s=60&amp;d=identicon&amp;r=g", "2023-03-01")
+            section.article-post
+              h2 Whois
+              p  Hi there 👋  My name is Alexandr Kazakov I am a software engineer, I have more than three years of experience with Solana blockchain, a multiple participant in Solana hackathons.
+
+              h2 My second Solana Hackathon
+              p
+                | The world’s only Crypto-to-Gmail bridge and email wallet.
+                br
+                | “Your Gmail Account is your Crypto Wallet”
+              a(href="https://solana.com/grizzlython/projects/gbits-gmail-wallet")
+                img.image-block(src="img/content/solana-gryzzlython.jpeg", alt="Solana Grizzlython Hackathon 2023", style="max-width: 600px")
+              p
+                | For the second year in a row I participated in the Solana hackathon, this time the project was the interactive AMP-email with the ability to transfer tokens and withdraw them into your Solana Wallet directly from the email.
+              p
+                | Project link
+                |
+                a(href="https://solana.com/grizzlython/projects/gbits-gmail-wallet") https://solana.com/grizzlython/projects/gbits-gmail-wallet
+              img.image-block(src="img/content/gbits-wallet-1.png", alt="Gbits Wallet Mobile", style="max-width: 600px")
+              img.image-block(src="img/content/gbits-wallet-withdrawal-solana.png", alt="Gbits Wallet Mobile Withdrawing Solana page", style="max-width: 600px")
+
+              p This is is a functionality wallet that has:
+
+              ul
+                li Account page with: the user email address, balance, transactions limit
+                li Send Gbits page, this page allows the user to send Gbits tokens on the Gbits network by the user email address. There is also an option to add your own message.
+                li Withdrawing Solana page, this page allows the user to withdrawal Solana/Solana SPL token to any of Solana wallet directly from email!
+                li History page. This page contain all transaction history of the user like: incoming, outgoing, withdrawal. Each transfer contains a link to the Explorer, Hash code of the transaction, amount, transfer number, time and date.
+
+              img.image-block(src="img/content/gbits-wallet-main.png", alt="Gbits Wallet the Main page")
+              img.image-block(src="img/content/gbits-wallet-history.png", alt="Gbits Wallet the History page")
+
+              p It was a great experience, now we can sell cryptocurrency directly in emails &#128512;
+
+
+              h2 So, how you can join?
+
+              p
+                | Please register
+                |
+                a(href="https://solana.com/grizzlython/") here
+                |
+                | If you are part of a team, each individual team member must register to be eligible for prizes.
+
+              p A project submission form will be available near the end of the Hackathon. In order to be eligible for any prizes, projects must complete the submission form.
+
+              h3 Do you need submit a project individually or join a team?
+              p You may submit a project by yourself. However, we recommend reaching out to other participants who may add valuable skills to your project. Solana Hackathons are highly competitive and so we recommend joining up with others to develop your idea as much as possible.
+
+              h3 About Solana Hackathon 2023
+
+              p $5MILLION IN GLOBAL PRIZES + SEED FUNDING
+              p Seven categories of Tracks:
+              ul
+                li Mobile
+                li Defi
+                li Payments
+                li Consumer
+                li tools & infrastructure
+                li Gaming
+                li Daos & network states
+
+
+
+
+          div#disqus_thread
+        div(class="col-xl-3 col-lg-3 col-md-12 col_m-b-md")
+          include sidebar.pug

@@ -1,0 +1,97 @@
+extends layout.pug
+
+include mixins.pug
+
+block title
+  | How to participate in Solana Hackathon
+block meta
+  meta(name="keywords" content="Solana Hackathon 2022")
+  meta(name="description" content="My experience at Solana Hackathon 2022. How to join.")
+block content
+  div.page-wrapper
+    div.container
+      div.row
+        div(class="col-xl-9 col-lg-9 col-md-12 col_m-b-md")
+          article
+            +page-header("How to participate in Solana Hackathon")(class="page-header_m-b")
+            +entry-meta("Аlexandr Kazakov", "https://secure.gravatar.com/avatar/b6ca1b6b48e87fdd83626bd47b3054e6?s=60&amp;d=identicon&amp;r=g", "2022-03-14")
+            section.article-post
+              h2 Who
+              p ℹ️ My name is Alexandr Kazakov I am a software engineer, full-stack web developer (Vue, React, Node.js), I also have a keen interest in blockchain more precisely it's Solana.
+
+              h2 Solana Hackathon Rules
+              img.image-block(src="img/content/solana-hackathon-logo-2022.png", alt="Solana Hackathon 2022", style="max-width: 400px")
+              ul
+                li High quality code
+                li Public repository with project code
+                li Quality presentation
+                li Live demo project
+                li Project Community
+
+              h2 About my Hackathon project
+
+              p
+                  | Project link
+                  |
+                  a(href="https://solana.com/summercamp/voting/gbits-pay") https://solana.com/summercamp/voting/gbits-pay
+
+              p
+                | Our team decided to participate in the 2022 Solana Hackathon, we decided to create the app that will scan QR codes to scan utility bills, bill in Solana, stabelcoins, SPL tokens, and make payments. We call it Gbits-Pay.
+              ul
+                li
+                   a(href="https://docs.google.com/presentation/d/1bvKrAk3vlRHm-oMQC6ZbnePnISD0I5pe2Aao18demos/edit?usp=sharing") Project presentation
+                li
+                   a(href="app.gbits.io") Live demo
+
+              p Our project is written in Vuejs + Web3js to work with the Solana network. In the app the user logs in with his Solana Wallet e.g. Phantom, after which he can scan QR codes of bills and pay them. Payments can be made in Solana, Stablecoins like Solana USDT and SPL tokens. We participated in tracks: Web3js, Mobile and Payments.
+              img.image-block(src="img/content/gbits-pay-1.png", alt="Gbits Pay Disconnected", style="max-width: 600px")
+              img.image-block(src="img/content/gbits-pay-connect-wallet.png", alt="Gbits Pay Connect", style="max-width: 600px")
+              img.image-block(src="img/content/gbits-pay-2.png", alt="Gbits Pay Connected", style="max-width: 600px")
+              img.image-block(src="img/content/gbits-pay-scanning.png", alt="Gbits Pay scanning", style="max-width: 600px")
+              img.image-block(src="img/content/gbits-pay-result-table.png", alt="Gbits Pay Scanning result", style="max-width: 600px")
+              img.image-block(src="img/content/gbits-pay-comossion.png", alt="Gbits Pay transaction comission", style="max-width: 600px")
+              img.image-block(src="img/content/gbits-pay-loading.png", alt="Gbits Pay Loading", style="max-width: 600px")
+              img.image-block(src="img/content/gbits-pay-success.png", alt="Gbits Pay Success window", style="max-width: 600px")
+              img.image-block(src="img/content/gbits-pay-result.png", alt="Gbits Pay Success transaction window", style="max-width: 600px")
+              img.image-block(src="img/content/gbits-pay-solscan.png", alt="Gbits Pay transaction history on Solscan", style="max-width: 600px")
+
+
+              br
+              br
+              P At the moment the app works with Swiss utility bills. Example:
+              img.image-block(src="img/content/swiss-utility-bill.png", alt="Swiss utility bill")
+
+              h2 About Solana
+
+              p It's good for the project community to have a blog, Twitter, communicate in the official Solana Discord, etc etc.
+
+              p Participating in the Solana Hackathon is a great opportunity to test your skills, there is only one minus: the large number of participants, it's not easy to win.
+
+              h3 Where can I access developer resources?
+              p
+                | Check out the Resources section
+                |
+                a(href="https://solana.com/grizzlython/resources") here
+                | .
+                | This page has all the tools, documentation, tutorials, and guides needed to start building today.
+
+              h3 Where can I ask technical questions?
+              p
+                | Head over to the #dev-questions channel in the Solana Hackathon Discord Server
+                a(href="https://discord.gg/sdr2FatE2D") here
+
+              h3 Can I meet up with other hackathon participants in real life?
+
+              p
+                | Yes! Ecosystem teams around the world are hosting coworking spaces running concurrently with the hackathon. Each is sponsored by a Solana ecosystem project that will be helping you through your hackathon journey, from project idea to getting started building on Solana. RSVP for one the global locations at
+                a(href="https://solana.com/events") solana.com/events
+
+
+              h3 Where can I find project ideas?
+              p
+                | While participants are encouraged to come up with novel concepts, Superteam has created a
+                a(href="http://build.superteam.fun/")  repository of project ideas
+
+          div#disqus_thread
+        div(class="col-xl-3 col-lg-3 col-md-12 col_m-b-md")
+          include sidebar.pug

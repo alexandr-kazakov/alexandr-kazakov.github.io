@@ -1,0 +1,40 @@
+mixin page-header(title)
+  div(class="page-header")&attributes(attributes)
+    h1(class="section-header__title")=title
+
+mixin section-header(title, descr)
+  div(class="section-header")&attributes(attributes)
+    h2(class="section-header__title")=title
+    if block
+      block
+    else
+
+//- mixin portfolio-box(href, src, alt, title, descr)
+//-   div(class="portfolio-box")
+//-     a(href=href, target="_blank", class="portfolio-box__link")
+//-       img(src=src, alt=alt, class="portfolio-box__image")
+//-       div(class="portfolio-box__caption")
+//-         h3(class="portfolio-box__title")=title
+//-         p(class="portfolio-box__descr")=descr  
+
+mixin entry-meta(author, img, date)
+  div(class="entry-meta")&attributes(attributes)
+    div.entry-meta__author
+      img(src="https://secure.gravatar.com/avatar/b6ca1b6b48e87fdd83626bd47b3054e6?s=60&amp;d=identicon&amp;r=g" alt=author  class="entry-meta__author-photo")
+      a(rel="author" class="entry-meta__author-name")=author
+    div.entry-meta__date
+      time(class="" datetime=date)=date
+
+mixin youtube(url)
+  div(class="video-youtube-wrapper video-youtube-wrapper_m-b")
+    iframe(width="848" height="477" src=url frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
+
+mixin cat-programming
+  a(href="cat-programming.html")&attributes(attributes) Programming
+
+mixin test(review, author)
+  // begin Blog-Box
+
+  // end Blog-Box
+
+

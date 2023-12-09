@@ -1,0 +1,58 @@
+doctype html
+html(lang='en')
+  block head
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name="format-detection" content="telephone=no")
+    title
+      block title
+    block meta
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700&amp;subset=cyrillic")
+    link(rel="stylesheet" href="libraries/bootstrap-4/css/bootstrap-grid.min.css" type="text/css" media="screen")
+    link(rel="stylesheet" href="fonts/fontello/css/fontello.css")
+    link(rel="stylesheet" href="css/bundle.min.css")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/atom-one-dark.min.css")
+    //- link(rel="stylesheet" href="css/media.min.css")
+  body
+    header(id="header" class="header")
+      div.container
+        nav(id="nav" class="nav")
+          label(for="nav__toggle" class="nav__toggle-btn icon-menu-1")
+          input(id="nav__toggle" type="checkbox" name="nav__toggle" class="nav__toggle")
+          ul(class="nav__items list-clear")
+            li
+              a(href="index.html" class="nav__item-link") Home
+            li
+              a(href="about-me.html" class="nav__item-link") About
+            li
+              a(href="cat-programming.html" class="nav__item-link") Blog
+
+    block content
+
+    footer(id="footer" class="footer")
+      div.container
+        div.row
+          div(class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col_m-b-md order-xl-last order-lg-last order-md-last order-sm-last")
+            <!-- begin Social -->
+            div(class="social footer__social")
+              ul(class="social__items list-clear")
+                li.social__item
+                  a(href="https://leetcode.com/alexandr-kazakov/" target="_blank" rel="noopener noreferrer" class="social__item-link icon-code")
+                li.social__item
+                  a(href="https://www.linkedin.com/in/alexandr-kazakov/" target="_blank" rel="noopener noreferrer" class="social__item-link icon-linkedin")
+                li.social__item
+                  a(href="https://stackoverflow.com/users/7460038/alexandr-kazakov" target="_blank" rel="noopener noreferrer" class="social__item-link icon-stackoverflow")
+                li.social__item
+                  a(href="https://codepen.io/alexandr-kazakov/" target="_blank" rel="noopener noreferrer" class="social__item-link icon-codepen")
+                li.social__item
+                  a(href="" target="_blank" rel="noopener noreferrer" class="social__item-link icon-github")
+                li.social__item
+                  a(href="mailto:alexandr.kazakov1@gmail.com" target="_blank" rel="noopener noreferrer" class="social__item-link icon-mail-4")
+            <!-- end Social -->
+          div(class="col-xl-6 col-lg-6 col-md-6 col-sm-6 order-xl-12")
+            p.footer__copyright Deus ex machina
+
+    script(id="dsq-count-scr" src="//erweb.disqus.com/count.js" async)
+    script(src="js/functions.min.js")

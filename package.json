@@ -1,0 +1,55 @@
+{
+  "name": "alexandr-kazakov.github.io",
+  "version": "1.0.0",
+  "description": "HTML template. Used by Pug, SASS, Babel, Webpack, Gulp",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
+    "bootstrap": "^4.3.1",
+    "include-media": "^1.4.9",
+    "inputmask": "^4.0.6",
+    "jquery": "^3.4.1",
+    "jstransformer-highlight": "^2.0.0",
+    "lazysizes": "^5.1.2",
+    "normalize.css": "^8.0.1",
+    "swiper": "^5.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "autoprefixer": "^9.6.5",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.4",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.24.5",
+    "browser-sync-ui": "^2.26.4",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.3.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "webpack": "^4.22.0",
+    "webpack-stream": "^5.1.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "scripts": {
+    "start": "gulp watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Alexandr Kazakov",
+    "email": "alexandr.kazakov1@gmail.com",
+    "url": "https://github.com/alexandr-kazakov"
+  }
+}

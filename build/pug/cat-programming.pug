@@ -1,0 +1,39 @@
+extends layout.pug
+
+include mixins.pug
+
+block title
+  | Programming
+block meta
+  meta(name="keywords" content="Programming articles")
+  meta(name="description" content="Articles about programming")
+block content
+  div.page-wrapper
+    div.container
+      div.row
+        div(class="col-xl-9 col-lg-9 col-md-12 col_m-b-md")
+          +page-header("Programming")(class="page-header_m-b")
+          article(class="post-box post-box_m-b")
+            h2.post-box__title
+              a(href="amp-emails-intro.html") [RU] Ваша емайл-рассылка нуждается в AMP-emails прямо сейчас
+            p.post-box__descr
+              | For the second year in a row I participated in the Solana hackathon, this time the project was...
+            +entry-meta("Alexandr Kazakov", "https://secure.gravatar.com/avatar/b6ca1b6b48e87fdd83626bd47b3054e6?s=40&amp;d=identicon&amp;r=g", "2023-12-09")(class="entry-meta_small")
+
+
+          article(class="post-box post-box_m-b")
+            h2.post-box__title
+              a(href="solana-hackathon-2023.html") My participation in the Solana Hackathon in 2023
+            p.post-box__descr
+              | For the second year in a row I participated in the Solana hackathon, this time the project was...
+            +entry-meta("Alexandr Kazakov", "https://secure.gravatar.com/avatar/b6ca1b6b48e87fdd83626bd47b3054e6?s=40&amp;d=identicon&amp;r=g", "2023-03-01")(class="entry-meta_small")
+
+          article(class="post-box post-box_m-b")
+            h2.post-box__title
+              a(href="solana-hackathon-how-to.html") How to participate in Solana Hackathon
+            p.post-box__descr
+              | Solana holds hackathons every year, I will explain from my own experience how you can participate...
+            +entry-meta("Alexandr Kazakov", "https://secure.gravatar.com/avatar/b6ca1b6b48e87fdd83626bd47b3054e6?s=40&amp;d=identicon&amp;r=g", "2022-03-14")(class="entry-meta_small")
+
+        div(class="col-xl-3 col-lg-3 col-md-12 col_m-b-md")
+          include sidebar.pug

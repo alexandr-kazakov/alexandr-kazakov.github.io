@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>Ваша емайл-рассылка нуждается в AMP-emails прямо сейчас
+    </title>
+    <meta name="keywords" content="AMP-emails complete guide">
+    <meta name="description" content="AMP-emails complete guide, how to">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700&amp;amp;subset=cyrillic">
+    <link rel="stylesheet" href="libraries/bootstrap-4/css/bootstrap-grid.min.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="fonts/fontello/css/fontello.css">
+    <link rel="stylesheet" href="css/bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/atom-one-dark.min.css">
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="container">
+        <nav class="nav" id="nav">
+          <label class="nav__toggle-btn icon-menu-1" for="nav__toggle"></label>
+          <input class="nav__toggle" id="nav__toggle" type="checkbox" name="nav__toggle">
+          <ul class="nav__items list-clear">
+            <li><a class="nav__item-link" href="index.html">Home</a></li>
+            <li><a class="nav__item-link" href="about-me.html">About</a></li>
+            <li><a class="nav__item-link" href="cat-programming.html">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="page-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 col-lg-9 col-md-12 col_m-b-md">
+            <article>
+              <div class="page-header page-header_m-b">
+                <h1 class="section-header__title">[RU] Ваша емайл-рассылка нуждается в AMP-emails прямо сейчас</h1>
+              </div>
+              <div class="entry-meta">
+                <div class="entry-meta__author"><img class="entry-meta__author-photo" src="https://secure.gravatar.com/avatar/b6ca1b6b48e87fdd83626bd47b3054e6?s=60&amp;amp;d=identicon&amp;amp;r=g" alt="Аlexandr Kazakov"/><a class="entry-meta__author-name" rel="author">Аlexandr Kazakov</a></div>
+                <div class="entry-meta__date">
+                  <time datetime="2023-12-09">2023-12-09</time>
+                </div>
+              </div>
+              <section class="article-post">
+                <h2>Кто я</h2>
+                <p> Привет, я фуллстек разработчик на JavaScript. AMP-эксперт, больше 5 лет работаю с Google-AMP фреймворком(AMP-pages) и более четырех лет с AMP-emails. За это время я успел поучаствовать в нескольких стартапах с AMP-emails и получить исчерпывающий опыт.</p>
+                <h2>Краткое содержание</h2>
+                <p>
+                  В данной статье я поделюсь своим опытом насчет AMP-emails и расскажу почему вам стоит их использовать уже сейчас. Для нетерпеливых отвечу сразу: AMP-emails это интерактивные емайлы которые разрабатывает Google и которые создаются преимущественно для Gmail почты, сюда также входят мобильные приложения Gmail для iOS и Android, также браузерная версия для компьютеров.
+                  Использовать AMP-emails нужно, потому что это даст более богатый опыт вашим Gmail пользователям и выведет на новый уровень вашу емайл-рассылку.
+                  Использовать AMP-emails можно уже сейчас, потому что вы ничего не теряете, при отправке AMP-email всегда отправляется вместе с обычной версией емайла, и все почтовые клиенты которые не поддерживают AMP-emails, автоматически отобразят регулярную емайл версию.
+                </p>
+                <h2>Преимущества AMP-email</h2>
+                <h3>1. Никакой табличной верстки и костылей</h3>
+                <p>Все кто когда-нибудь верстал обычные емайлы, знает, что их код выглядит как месиво из table,tr,td тегов, также много приходится писать инлайн стилей. AMP-emails создаются как современные веб-приложения. Все стили можно писать в отдельный style тег.</p>
+                <h3>2. Легкое использование готовых AMP-компонентов</h3>
+                <p>Многие кто занимается емайл-рассылкой знает, что некоторые интерактивные элементы мы можем создавать и в обычных емайлах и это будет работать в некоторых почтовиках.</p>
+                <p>Например у нас есть задача добавить карусель для картинок товара, мы можем сделать такую разметку в коде обычного емайла:</p><br><p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="xbpWzW" data-user="freshinbox" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<span>See the Pen <a href="https://codepen.io/freshinbox/pen/xbpWzW">
+                <Add>To Cart (no transition)</a> by FreshInbox (<a href="https://codepen.io/freshinbox">@freshinbox</a>)</Add>
+                <on><a href="https://codepen.io">CodePen</a>.</span></on></p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script><br>
+                <p>Самая большая проблема такого подхода, что у этого нет никакого стандарта. По сути это просто очумелые ручки, костыли, что хотим, то и городим.</p>
+                <p>Как решает данную проблему AMP-emails? У AMP-emails есть компонент &nbsp;<a href="https://amp.dev/documentation/components/email/amp-carousel">amp-carousel</a>, вы просто берете его и используете. Есть документация, примеры. В AMP-email базовая карусель может иметь такой код:</p>
+                <pre><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">amp-carousel</span>
+  <span class="hljs-attr">width</span>=<span class="hljs-string">"450"</span>
+  <span class="hljs-attr">height</span>=<span class="hljs-string">"300"</span>
+  <span class="hljs-attr">layout</span>=<span class="hljs-string">"responsive"</span>
+  <span class="hljs-attr">type</span>=<span class="hljs-string">"slides"</span>
+  <span class="hljs-attr">role</span>=<span class="hljs-string">"region"</span>
+  <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Basic carousel"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">amp-img</span>
+    <span class="hljs-attr">src</span>=<span class="hljs-string">"/static/inline-examples/images/image1.jpg"</span>
+    <span class="hljs-attr">width</span>=<span class="hljs-string">"450"</span>
+    <span class="hljs-attr">height</span>=<span class="hljs-string">"300"</span>
+  &gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">amp-img</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">amp-img</span>
+    <span class="hljs-attr">src</span>=<span class="hljs-string">"/static/inline-examples/images/image2.jpg"</span>
+    <span class="hljs-attr">width</span>=<span class="hljs-string">"450"</span>
+    <span class="hljs-attr">height</span>=<span class="hljs-string">"300"</span>
+  &gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">amp-img</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">amp-img</span>
+    <span class="hljs-attr">src</span>=<span class="hljs-string">"/static/inline-examples/images/image3.jpg"</span>
+    <span class="hljs-attr">width</span>=<span class="hljs-string">"450"</span>
+    <span class="hljs-attr">height</span>=<span class="hljs-string">"300"</span>
+  &gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">amp-img</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">amp-carousel</span>&gt;</span></code></pre><span>А выглядеть будет так:</span><img class="image-block" src="img/content/amp-email-carousel-example.png" alt="AMP-email Carousel example">
+                <p>И при этом не нужно писать никакие CSS стили для карусели, если мы решили использовать базовый дизайн.</p>
+                <P>Итак в AMP-emails есть готовый набор компонентов такие как: карусель, аккордeон, сайдбар и другие, которые легко добавить в код и которые дадут вашим пользователям более богатый опыт использования. Также стоит учитывать и тот факт, что мы можем легко обрабатывать клики по кнопкам и скрывать/отображать тот или иной элемент после клика пользователя.</P>
+                <h3>3. Обмен данными с сервером</h3>
+                <p>AMP-emails конечно любят не за базовые готовые компоненты, а за динамические данные и возможность обмениваться данными с удаленным сервером(через API). После того, как пользователь открывает AMP-email мы можем отправлять POST и GET запросы к нашему серверу. Разберемся как это работает.</p>
+                <h4>Запросы могут отправляться:</h4>
+                <ol>
+                  <li>Автоматически(GET-запрос) при открытии пользователем емайла. При открытии емайла будет происходить запрос к endpoint на нашем API сервера и в ответе от API будет содержаться JSON с данными. Это полезно когда нам нужно показывать пользователю только актуальную информацию, например цены, количество оставшихся номеров в отеле, баланс и другое. Данная возможность позволяет нам например отправлять полностью пустой AMP-email в котором все данные будут динамические(будут загружаться с нашего сервера при открытии емайл пользователем).</li>
+                  <li>По событию(например клик). Практически по каждому клику пользователя AMP-email может отправлять POST звпрос с какими-либо данными на наш сервер, после чего AMP-email ждет ответ(JSON) и при необходимости выводит данные из него в емайле, также есть обработка ошибок. По клику пользователя также мы можем рефрешиь данные(повторяем GET запрос) которые мы загрузили, когда пользователь открыл емайл(1).</li>
+                </ol>
+                <h4>Некоторые примеры AMP-emails из моих работ, с запросами к серверу, динамическими данными</h4>
+                <h5>E-commerce Shopify AMP-email</h5><img class="image-block" src="img/content/e-commerce-amp-email-example.gif" alt="AMP-email e-commerce example">
+                <p>В данном примере AMP-email все данные динамические. Это значит что все тексты и картинки подгружаются динамически с API Shopify магазина(данные AMP-email синхронизированы с данными магазина). Эти данные подгружаются каждый раз когда пользователь открывает AMP-email. Также присутствует событие проверки товаров в корзине, оно срабатывает по клику на иконку корзины, AMP-email отправляет POST-запрос с данными корзины и сервер проверяет, есть ли выбранные товары в наличии, после чего присылает ответ AMP-емайлу, который тот обрабатывает.</p>
+                <p>Данный AMP-email поддерживает от одного до пяти товаров и может быть подключен к любому Shopify магазину.</p>
+                <h5>Survey AMP-email</h5><img class="image-block" src="img/content/amp-email-survey-example.gif" alt="AMP-email e-commerce example">
+                <p>С помощью AMP-emails мы можем делать всевозможные опросы, викторины, анкеты, оценки, рейтинги, включая те, что будет переключаться "экран" после выбора пользователя(например со шкалой прогресса).</p>
+                <h5>Криптокошелек AMP-email</h5><img class="image-block" src="img/content/amp-email-crypto-wallet-example-1.png" alt="AMP-email crypto wallet example 1"><img class="image-block" src="img/content/amp-email-crypto-wallet-example-2.png" alt="AMP-email crypto wallet example 2">
+                <p>Данный AMP-email содержит несколько табов(страниц):</p>
+                <ol>
+                  <li>Данные пользователя, баланс, лимиты</li>
+                  <li>Окно перевода токенов внутри сети, по адресу емайл получателя</li>
+                  <li>Вывод токенов на свой криптокошелек(Solana)</li>
+                  <li>История всех переводов</li>
+                </ol>
+                <p>Данный AMP-email подключен к самописному API на Nodejs и работает по тому же принципу: отправляет запросы к API и получает ответы с данными. Особенность данного емайла в том, что пользователь может выводить токены на свой криптокошелек прямо из емайла. На сервере, помимо прочего, используется Web3js для подключения к сети Solana.</p>
+                <h3>4. Отправка AMP-emails</h3>
+                <p>AMP-email версия отправляется всегда вместе с регулярной HTML версией. Отправку AMP-emails можно настроить как самому через SMTP, так и воспользоваться готовыми<a href="https://amp.dev/support/faq/email-support">ESPs-решениями</a>&nbsp;
+                  Ниже показан пример кода, как можно отправлять AMP-emails с помощью ESP Sendgrid, как вы видите, вместе отправляются сразу три версии: AMP, HTML, Plain text.
+                </p>
+                <pre><code class="hljs"><span class="hljs-keyword">const</span> message = {
+  <span class="hljs-attr">to</span>: <span class="hljs-string">'recipient-email-address@gmail.com'</span>,
+  <span class="hljs-attr">from</span>: <span class="hljs-string">'your-sender-address@gmail.com'</span>,
+  <span class="hljs-attr">subject</span>: <span class="hljs-string">'Demo AMP-email via Sendgrid'</span>,
+  <span class="hljs-attr">trackingSettings</span>: {
+    <span class="hljs-attr">clickTracking</span>: {
+      <span class="hljs-attr">enable</span>: <span class="hljs-literal">true</span>,
+    },
+    <span class="hljs-attr">openTracking</span>: {
+      <span class="hljs-attr">enable</span>: <span class="hljs-literal">false</span>,
+    },
+    <span class="hljs-attr">subscriptionTracking</span>: {
+      <span class="hljs-attr">enable</span>: <span class="hljs-literal">false</span>,
+    },
+  },
+  <span class="hljs-attr">content</span>: [
+    {
+      <span class="hljs-attr">type</span>: <span class="hljs-string">'text/plain'</span>,
+      <span class="hljs-attr">value</span>: <span class="hljs-string">'Some plain text with Email description'</span>,
+    },
+    {
+      <span class="hljs-attr">type</span>: <span class="hljs-string">'text/x-amp-html'</span>,
+      <span class="hljs-attr">value</span>: <span class="hljs-string">`&lt;!doctype html&gt;
+      &lt;html ⚡4email data-css-strict&gt;
+      &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;script async src="https://cdn.ampproject.org/v0.js"&gt;&lt;/script&gt;
+        &lt;style amp4email-boilerplate&gt;body{visibility:hidden}&lt;/style&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        Hello, AMP4EMAIL world. This is AMP-email version of email!
+      &lt;/body&gt;
+      &lt;/html&gt;`</span>,
+    },
+    {
+      <span class="hljs-attr">type</span>: <span class="hljs-string">'text/html'</span>,
+      <span class="hljs-attr">value</span>: <span class="hljs-string">`
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office"&gt;
+      &lt;head&gt;
+          &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width,initial-scale=1"&gt;
+        &lt;meta name="x-apple-disable-message-reformatting"&gt;
+        &lt;title&gt;&lt;/title&gt;
+        &lt;style&gt;
+          table, td, div, h1, p {font-family: Arial, sans-serif;}
+          table, td {border:2px solid #000000 !important;}
+        &lt;/style&gt;
+      &lt;/head&gt;
+      &lt;body style="margin:0;padding:0;"&gt;
+        &lt;table role="presentation" style="width:100%;border-collapse:collapse;border:0;border-spacing:0;background:#ffffff;"&gt;
+          &lt;tr&gt;
+            &lt;td align="center" style="padding:0;"&gt;
+              Hello HTML world! This is HTML version of email!
+            &lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/table&gt;
+      &lt;/body&gt;
+      &lt;/html&gt;`</span>,
+    },
+  ],
+};
+
+</code></pre>
+                <h3>5. Динамическая загрузка картинок</h3>
+                <p>Ответ от API сервера может содержать в себе URL картинки, которые мы можем динамически подгружать в AMP-email, например по событию клика. Это удобно когда например хочется динамически загрузить QR-код.</p>
+                <h2>Другие виды AMP-emails</h2>
+                <p>Бывают AMP-emails с бронированием билетов на самолет, номеров в отели, продажа билетов на спортивный матч, различного рода финансовые AMP-emails, также вариант оплаты товаров прямо в емайле с банковской карты. И многое-многое другое...</p>
+                <h3>Поддержка почтовыми клиентами</h3>
+                <p>Официально поддержка заявлена в таких почтовых клиентах как: Gmail, Yahoo, Mail.ru, FairEmail. Но чаще всего AMP-email делаются исключительно под Gmail пользователей. AMP-emails работают как в браузерной версии Gmail для компьютеров, так и в мобильных Gmail приложениях для IOS и Android.</p>
+                <p>При отправке AMP-email всегда отправляется две версии вместе: AMP и обычная. Те почтовые клиенты, которые не поддерживают AMP-emails автоматически отображают обычную HTML-версию.</p>
+                <h2>Итого</h2>
+                <p>AMP-emails дадут вашим пользователям более богатый опыт взаимодействия с емайлами. Есть исследования, которые говорят, что в AMP-email выше конверсия, так как пользователю незачем переходить на внешние ресурсы и он все может сделать внутри своего AMP-email. При этом вы ничего не теряете, ваши пользователи других почтовых клиентов, которые не поддерживают  AMP-emails будут видеть ваши регулярные HTML-емайлы как и раньше.</p>
+              </section>
+            </article>
+            <div id="disqus_thread"></div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-12 col_m-b-md">
+            <section class="categories sidebar-section sidebar-section_gray">
+              <h3>Tags</h3>
+              <ul>
+                <li><a href="cat-programming.html">Programming</a></li>
+              </ul>
+            </section>
+            <section class="recent-posts sidebar-section sidebar-section_main-light">
+              <h3>Last articles</h3>
+              <ul>
+                <li><a href="amp-emails-intro.html">[RU] Ваша емайл-рассылка нуждается в AMP-emails прямо сейчас</a></li>
+                <li><a href="solana-hackathon-2023.html"> My participation in the Solana Hackathon in 2023</a></li>
+                <li><a href="solana-hackathon-how-to.html"> How to participate in Solana Hackathon</a></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col_m-b-md order-xl-last order-lg-last order-md-last order-sm-last"><!-- begin Social -->
+            <div class="social footer__social">
+              <ul class="social__items list-clear">
+                <li class="social__item"><a class="social__item-link icon-code" href="https://leetcode.com/alexandr-kazakov/" target="_blank" rel="noopener noreferrer"></a></li>
+                <li class="social__item"><a class="social__item-link icon-linkedin" href="https://www.linkedin.com/in/alexandr-kazakov/" target="_blank" rel="noopener noreferrer"></a></li>
+                <li class="social__item"><a class="social__item-link icon-stackoverflow" href="https://stackoverflow.com/users/7460038/alexandr-kazakov" target="_blank" rel="noopener noreferrer"></a></li>
+                <li class="social__item"><a class="social__item-link icon-codepen" href="https://codepen.io/alexandr-kazakov/" target="_blank" rel="noopener noreferrer"></a></li>
+                <li class="social__item"><a class="social__item-link icon-github" href="" target="_blank" rel="noopener noreferrer"></a></li>
+                <li class="social__item"><a class="social__item-link icon-mail-4" href="mailto:alexandr.kazakov1@gmail.com" target="_blank" rel="noopener noreferrer"></a></li>
+              </ul>
+            </div><!-- end Social -->
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 order-xl-12">
+            <p class="footer__copyright">Deus ex machina</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script id="dsq-count-scr" src="//erweb.disqus.com/count.js" async></script>
+    <script src="js/functions.min.js"></script>
+  </body>
+</html>

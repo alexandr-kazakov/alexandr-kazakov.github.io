@@ -1,0 +1,46 @@
+extends layout.pug
+
+include mixins.pug
+
+block title
+  |   About me
+block meta
+  meta(name="keywords" content="About me")
+  meta(name="description" content="About me")
+block content
+  div.page-wrapper
+    div.container
+      div.row
+        div(class="col-xl-9 col-lg-9 col-md-12 col_m-b-md")
+          article
+            +page-header("About me")(class="page-header_m-b")
+            section
+              p
+                | Hi there 👋
+                br
+                | My name is Alexandr Kazakov. I'm a fullstack javascript developer, crypto enthusiast, Google-AMP expert. Favorite languages: JavaScript, Typescript, Rust. In my spare time I enjoy cycling and swimming.
+                br
+                | 📌 Moscow, Russia
+              span
+                | 📧 Feel free to contact me:&nbsp;
+                a(href="mailto:alexandr.kazakov1@gmail.com") alexandr.kazakov1@gmail.com
+
+            ul
+              li.social__item
+                a(href="https://github.com/alexandr-kazakov" target="_blank" rel="noopener noreferrer") Github
+              li.social__item
+                a(href="https://www.linkedin.com/in/alexandr-kazakov/" target="_blank" rel="noopener noreferrer") Linkedin
+              li.social__item
+                a(href="https://leetcode.com/alexandr-kazakov/" target="_blank" rel="noopener noreferrer") LeetCode
+              li.social__item
+                a(href="http://codepen.io/alexandr-kazakov/" target="_blank" rel="noopener noreferrer") Codewars
+              li.social__item
+                a(href="https://stackoverflow.com/users/7460038/alexandr-kazakov" target="_blank" rel="noopener noreferrer") Stackoverflow
+              li.social__item
+                a(href="https://codepen.io/alexandr-kazakov/" target="_blank" rel="noopener noreferrer") Codepen
+
+
+
+          div#disqus_thread
+        div(class="col-xl-3 col-lg-3 col-md-12 col_m-b-md")
+          include sidebar.pug
